@@ -17,19 +17,19 @@
     <h2>Add Employee</h2>
     <h2>Employees</h2>
     
-      <form>
-        <input data-testid="firstNameInput" placeholder="First Name" type="text">
-        <input data-testid="lastNameInput" placeholder="Last Name" type="text">
-       <input data-testid="idInput" placeholder="ID" type="number">
-       <input data-testid="titleInput" placeholder="Title" type="text">
-       <input data-testid="annualSalaryInput" placeholder="Annual Salary" type="number">
-    
-        <button data-testid="submitButton" onSubmit =`handleSubmit()`>Submit </button>
+      <form class="employeeInfo" onSubmit="submitForm(event)">
+        <input id="fName" data-testid="firstNameinput" placeholder="First Name" type="text">
+       <input id="lName" data-testid="lastNameInput" placeholder="Last Name" type="text">
+       <input id="eID" data-testid="idInput" placeholder="ID" type="number">
+       <input id="eTitle" data-testid="titleInput" placeholder="Title" type="text">
+       <input id="salary" data-testid="annualSalaryInput" placeholder="Annual Salary" type="number">
+
+        <button id= "submitF" data-testid="submitButton" type="submit" >Submit </button>
       </form>
       <table>
         <tbody>
 <tr>
-  
+
 </tr>
       
       </tbody>
