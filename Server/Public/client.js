@@ -1,5 +1,6 @@
 console.log('well hello there');
 function onSubmit(event){
     event.preventDefault();
- console.log('event')   
+    let newEntry = document.getElementById"
+ console.log('onClick', event)   
 }

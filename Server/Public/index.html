@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
   <title>Salary Calculator</title>
+   <script defer src="client.js"></script>
+  
 </head>
+<style>
+</style>
 <body>
   <header>
     <h1>Salary Calculator</h1>
@@ -15,31 +18,20 @@
     <h2>Employees</h2>
     
       <form>
-        <input id="txtInput" placeholder="First Name" type="text">
-      
-        <input id="txtInput" placeholder="Last Name" type="text">
-      
-        <input id="txtInput" placeholder="ID" <input id="txtInput" placeholder="Title" type="text">
-        <input id="txtInput" placeholder="Annual Salary" type=number>
-      
-        <label>
-          <Tr>First Name</Tr><input type="text" />
-        </label>
-      
-        <label>
-          <Tr>Last Name</Tr><input type="text" />
-        </label>
-        <label>
-          <Tr>ID</Tr><input type=number />
-        </label>
-        <label>
-          <Tr>Title</Tr><input type="text" />
-        </label>
-        <Tr>Annual Salary</Tr><input type="text" />
-      
-        <button=onClick="handleSubmit(event)>Submit form</button>
+        <input data-testid="firstNameInput" placeholder="First Name" type="text">
+        <input data-testid="lastNameInput" placeholder="Last Name" type="text">
+       <input data-testid="idInput" placeholder="ID" type="number">
+       <input data-testid="titleInput" placeholder="Title" type="text">
+       <input data-testid="annualSalaryInput" placeholder="Annual Salary" type="number">
+    
+        <button data-testid="submitButton" onSubmit =`handleSubmit()`>Submit </button>
       </form>
-      <script src="./Scripts/client.js" type="text" rel="scripts"></script>
+      <table>
+        <tbody>
+<tr>
+  
+</tr>
+      
       </tbody>
      </table>
 
