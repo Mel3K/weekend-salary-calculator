@@ -17,7 +17,7 @@
     <h2>Add Employee</h2>
     <h2>Employees</h2>
     
-      <form class="employeeInfo" onSubmit="submitForm(event)">
+      <form class="employeeInfo" onSubmit="handleSubmit(event)">
         <input id="fName" data-testid="firstNameinput" placeholder="First Name" type="text">
        <input id="lName" data-testid="lastNameInput" placeholder="Last Name" type="text">
        <input id="eID" data-testid="idInput" placeholder="ID" type="number">
@@ -25,16 +25,30 @@
        <input id="salary" data-testid="annualSalaryInput" placeholder="Annual Salary" type="number">
         <button id= "submitF" data-testid="submitButton" type="submit" >Submit </button>
       </form>
-      <table>   
-<tr id="row">
-<form action=""
-</tr>
-      
-      </tbody>
-     </table>
-
-   
-  </main>
+      <table>  
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Annual Salary</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>firstEmp</td>
+              <td>empLastName</td>
+              <td>EmpID</td>
+              <td>EmpTitle</td>
+              <td>Emp Salary</td>
+              <td>x</td>
+            </tr>
+          
+          </tbody>
+        </table>
+     </main>
   <footer>
     <p>Total Monthly</p>
   </footer>

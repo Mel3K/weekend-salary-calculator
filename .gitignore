@@ -1,4 +1,5 @@
 node_modules/
-.gitignore
-express
+DS_Store
+*.log
+
 
