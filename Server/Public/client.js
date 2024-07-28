@@ -4,6 +4,7 @@ console.log('well hello there');
 
 function handleSubmit(event){
     event.preventDefault();
+   
 
 // const table = document.createElement('table');
 // const tblBody = document.createElement('tbody');
@@ -29,15 +30,27 @@ function handleSubmit(event){
 //   salary: document.getElementById('salary').value,
 //     // console.log('in submitForm', FirstName, lastName, employeeId, title, salary);
 // }
-//let newTableEntry =  document.createElement('div');
+// let newTableEntry =  document.createElement('div');
 
 let firstName = document.querySelector('fName');
 let lastName = document.querySelector('lName');
 let employeeId = document.querySelector('eID');
 let title = document.querySelector('eTitle');
 let salary = document.querySelector('salary');
-console.log('in handleSubmit', firstName.value, lastName.value, employeeId.value, title.value, salary.value);
+
+
+console.log('i was clicked:', event.target);
+// MAKE OBJECT WITH THE VALUES TO THEN APEND TO ROW
+
+
+let tableRows = [];
+
+
+let newTableRow = {firstName:firstName.value, lastName: lastName.value, employeeId: employeeId.value, title: title.value, salary: salary.value}
+console.log('newTableRow:', newTableRow);
+
 };
+
 
 
 
@@ -52,5 +65,3 @@ console.log('in handleSubmit', firstName.value, lastName.value, employeeId.value
 // event.target.innerHTML = employeeId;
 // event.target.innerHTML = title;
 // event.target.innerHTML = salary;
-
-
